@@ -1,3 +1,19 @@
+set up  Nginx server  rtmp
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt install nginx-full
+sudo apt install libnginx-mod-rtmp
+sudo nano /etc/nginx/nginx.conf
+
+service nginx start
+service nginx stop
+
+
+
+
+
 user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
